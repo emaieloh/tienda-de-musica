@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+#brand-name {
+    font-family: 'Dancing Script', cursive;
+}
+
+.navbar-brand img {
+    width: 100px;
+    border-radius: 100%;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    transition: font-weight 0.3s;
+}
+
+.nav-link:hover {
+    font-weight: 700;
+}
+
+main {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);
+    background: linear-gradient(to right, #FFFFFF, #FFEFBA);
+}
+
+.tab-cat {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.tab-cat:hover {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: none;
+}
+
+#ul-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+#electric-container, #bass-container, #acoustic-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card {
+    width: 25%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card img {
+    width: 100%;
+    align-self: flex-end;
+}
+
+footer i {
+    margin-right: 3px;
+}
+
+.fa-mobile-phone, .fa-map-marker {
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 991px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 575px) {    
+    #ul-container {
+        width: 50%;
+    }
+    
+    .card {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+#animated {
+    position: relative;
+    animation-name: practice;
+    animation-duration: 0.5s;
+}
+
+@keyframes practice {
+    0% {
+        left: 100vw;
+        top: 0;
+    }
+
+    100% {
+        left: 0;
+        top: 0;
+    }
+}
